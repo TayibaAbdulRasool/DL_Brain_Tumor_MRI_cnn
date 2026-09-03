@@ -79,6 +79,12 @@ The trained model achieved the following performance:
 
 The final evaluation was performed on **1,600 previously unseen MRI images**.
 
+
+## **UI**
+
+<img width="1760" height="906" alt="image" src="https://github.com/user-attachments/assets/68526d49-4f7e-4672-a8cb-7a3d60a49c39" />
+
+
 ## **Project Structure**
 
 ```text
@@ -103,7 +109,7 @@ brain-tumor-mri-classification/
 
 ## **Technologies**
 
-**Python · PyTorch · Torchvision · Scikit-learn · NumPy · Matplotlib · Seaborn · Jupyter Notebook · Streamlit**
+**Python · PyTorch · Torchvision · Scikit-learn · NumPy · Matplotlib · Seaborn · Kaggle · Streamlit**
 
 ## **Outcome**
 
