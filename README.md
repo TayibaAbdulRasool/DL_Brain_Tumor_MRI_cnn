@@ -1,31 +1,41 @@
 # **Brain Tumor MRI Classification**
 
+A **deep learning image classification project** built with **PyTorch** to classify brain MRI scans into four categories.
+
+### 🚀 **Live Demo**
+
+**[Try the Brain Tumor MRI Classifier](https://dlbraintumormricnn-jomyzkazajbtvvkfrbkiaj.streamlit.app/)**
+
+---
+
 ## **Overview**
 
-A **PyTorch CNN-based deep learning project** that classifies brain MRI images into four categories:
+This project uses a custom **Convolutional Neural Network (CNN)** to classify brain MRI images into:
 
 * **Glioma**
 * **Meningioma**
 * **Pituitary Tumor**
 * **No Tumor**
 
+The trained model processes an MRI image and predicts its corresponding category.
+
 ## **Problem Statement**
 
-Manual classification of brain MRI scans is time-consuming and requires medical expertise. This project uses **deep learning and image classification** to automatically identify the category of a brain MRI image.
+Classifying brain MRI scans manually can be **time-consuming** and requires specialized medical expertise. This project explores how **deep learning and computer vision** can be used to automate MRI image classification and assist in identifying different brain tumor categories.
 
 ## **Dataset**
 
-**Brain Tumor MRI Dataset** by **Masoud Nickparvar**
+The project uses the **Brain Tumor MRI Dataset** by **Masoud Nickparvar**.
 
 * **Total Images:** 7,200
 * **Training Images:** 5,600
 * **Validation Images:** 1,120
 * **Testing Images:** 1,600
-* **Classes:** 4
-* **Image Size:** 128 × 128
-* **Input:** RGB
+* **Number of Classes:** 4
+* **Image Size:** 128 × 128 pixels
+* **Input Format:** RGB
 
-### **Classes**
+### **Class Distribution**
 
 | **Class**      | **Training** | **Testing** |
 | -------------- | -----------: | ----------: |
@@ -35,31 +45,41 @@ Manual classification of brain MRI scans is time-consuming and requires medical 
 | **Pituitary**  |        1,400 |         400 |
 | **Total**      |    **5,600** |   **1,600** |
 
-## **Model**
+## **Model Architecture**
 
-**BrainTumorCNN** — a custom CNN developed using **PyTorch**.
+The project implements a custom CNN named **`BrainTumorCNN`** using **PyTorch**.
 
 * **3 Convolutional Layers**
 * **ReLU Activation**
 * **Max Pooling**
 * **Fully Connected Layers**
 * **Dropout: 0.5**
-* **4-Class Output**
+* **4-Class Output Layer**
 
-### **Training**
+### **Training Configuration**
 
-* **Optimizer:** Adam
-* **Learning Rate:** 0.001
-* **Loss Function:** Cross-Entropy Loss
-* **Batch Size:** 32
-* **Epochs:** 8
-* **Data Augmentation:** Random Flip and Rotation
+| **Parameter**         | **Value**              |
+| --------------------- | ---------------------- |
+| **Framework**         | PyTorch                |
+| **Optimizer**         | Adam                   |
+| **Learning Rate**     | 0.001                  |
+| **Loss Function**     | Cross-Entropy Loss     |
+| **Batch Size**        | 32                     |
+| **Epochs**            | 8                      |
+| **Image Size**        | 128 × 128              |
+| **Data Augmentation** | Random Flip & Rotation |
 
 ## **Results**
 
-* **Training Accuracy:** 96.52%
-* **Validation Accuracy:** 95.27%
-* **Test Accuracy:** **92.56%**
+The trained model achieved the following performance:
+
+| **Metric**              | **Accuracy** |
+| ----------------------- | -----------: |
+| **Training Accuracy**   |   **96.52%** |
+| **Validation Accuracy** |   **95.27%** |
+| **Test Accuracy**       |   **92.56%** |
+
+The final evaluation was performed on **1,600 previously unseen MRI images**.
 
 ## **Project Structure**
 
@@ -85,8 +105,10 @@ brain-tumor-mri-classification/
 
 ## **Technologies**
 
-**Python · PyTorch · Torchvision · Scikit-learn · NumPy · Matplotlib · Seaborn · Jupyter Notebook**
+**Python · PyTorch · Torchvision · Scikit-learn · NumPy · Matplotlib · Seaborn · Jupyter Notebook · Streamlit**
 
 ## **Outcome**
 
-The trained CNN achieved **92.56% test accuracy** in classifying brain MRI images into **four categories**, demonstrating the effectiveness of deep learning for automated MRI image classification.
+The custom CNN achieved a **92.56% test accuracy** on **1,600 unseen MRI images**, demonstrating the potential of **deep learning-based image classification** for automated brain MRI category prediction.
+
+> **Note:** This project is intended for educational and research purposes and is not a substitute for professional medical diagnosis.
