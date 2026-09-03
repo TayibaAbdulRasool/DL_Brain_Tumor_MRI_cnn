@@ -2,9 +2,7 @@
 
 A **deep learning image classification project** built with **PyTorch** to classify brain MRI scans into four categories.
 
-###  **Live**
-
-**[Try the Brain Tumor MRI Classifier](https://dlbraintumormricnn-jomyzkazajbtvvkfrbkiaj.streamlit.app/)**
+###  **Live ** **[Try the Brain Tumor MRI Classifier](https://dlbraintumormricnn-jomyzkazajbtvvkfrbkiaj.streamlit.app/)**
 
 ---
 
